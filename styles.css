@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-size: 16px;
+}
 .signup {
   display: grid;
   max-width: 1440px;
@@ -25,36 +27,51 @@
   margin-top: 36px;
   margin-bottom: 100px;
 }
-
 .signup_right_section {
   padding-top: 128px;
-  padding-bottom: 78px;
+  padding-bottom: 4.875rem;
 }
-.signup_right_content {
-  max-width: 534px;
-  margin: auto;
+.signup_right_section h2,
+.signup_right_section h1 {
+  color: #6f6f6f;
 }
-.signup_right_content h1 {
+
+.signup_right_section h1 {
+  font-size: 2.5rem;
   margin-top: 8px;
-  margin-bottom: 16px;
-  color: #6f6f6f;
-  font-size: 40px;
+  margin-bottom: 1rem;
 }
-.signup_right_content h2 {
-  color: #6f6f6f;
-}
-.login_link {
-  color: #373737;
-}
-.login_link a {
-  color: #56ccf2;
+.signup_right_content{
+    max-width: 524px;
+    margin: auto;
 }
 .signup_right_content form {
-  margin-top: 36px;
-  margin-bottom: 22px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 36px;
+  margin-bottom: 22px;
+}
+.signup_right_content form input{
+    padding: 10px 60px 10px 48px;
+    border: 2px solid #9CA2AC;
+border-radius: 4px;
+width: 100%;
+
+}
+.signup_right_content form button {
+  background: #56ccf2;
+  border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin-top: 16px;
+}
+.signup_right_content form button a{
+    color: #FFFFFF;
+text-decoration: none;
 }
 .signup_right_content .form_control {
   display: flex;
@@ -64,36 +81,20 @@
 .signup_right_content .form_control label {
   color: #373737;
 }
-.signup_right_content .form_control input {
-  padding: 10px 60px 10px 48px;
-  border: 2px solid #9ca2ac;
-  border-radius: 4px;
+
+.terms{
+    color: #373737;
+    padding: 10px;
+}
+.terms a, .login_link a{
+    color: #56CCF2;
 }
 .input_div{
     position: relative;
 }
-.input_div input{
-    width: 100%;
-}
-.image_div{
+.icon_div{
     position: absolute;
     right: 40px;
     top: 50%;
     transform: translate(50%, -50%);
-}
-.signup_right_content button{
-    margin-top: 16px;
-    background: #56CCF2;
-border-radius: 4px;
-color: #FFFFFF;
-padding-top: 20px;
-padding-bottom: 20px;
-outline: none;
-border: none;
-}
-.terms_condition{
-    padding: 10px;
-}
-.terms_condition a{
-    color: #56CCF2;
 }

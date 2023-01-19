@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
 }
 html {
   font-size: 16px;
@@ -41,9 +42,12 @@ html {
   margin-top: 8px;
   margin-bottom: 1rem;
 }
-.signup_right_content{
-    max-width: 524px;
-    margin: auto;
+.signup_right_section h2 {
+  font-weight: 700;
+}
+.signup_right_content {
+  max-width: 524px;
+  margin: auto;
 }
 .signup_right_content form {
   display: flex;
@@ -52,12 +56,11 @@ html {
   margin-top: 36px;
   margin-bottom: 22px;
 }
-.signup_right_content form input{
-    padding: 10px 60px 10px 48px;
-    border: 2px solid #9CA2AC;
-border-radius: 4px;
-width: 100%;
-
+.signup_right_content form input {
+  padding: 10px 60px 10px 48px;
+  border: 2px solid #9ca2ac;
+  border-radius: 4px;
+  width: 100%;
 }
 .signup_right_content form button {
   background: #56ccf2;
@@ -69,9 +72,9 @@ width: 100%;
   outline: none;
   margin-top: 16px;
 }
-.signup_right_content form button a{
-    color: #FFFFFF;
-text-decoration: none;
+.signup_right_content form button a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .signup_right_content .form_control {
   display: flex;
@@ -82,19 +85,80 @@ text-decoration: none;
   color: #373737;
 }
 
-.terms{
-    color: #373737;
-    padding: 10px;
+.terms {
+  color: #373737;
+  padding: 10px;
 }
-.terms a, .login_link a{
-    color: #56CCF2;
+.terms a,
+.login_link a {
+  color: #56ccf2;
 }
-.input_div{
-    position: relative;
+.input_div {
+  position: relative;
 }
-.icon_div{
-    position: absolute;
-    right: 40px;
-    top: 50%;
-    transform: translate(50%, -50%);
+.icon_div {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+/* login styles */
+.signup_left_section h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 102px;
+  color: white;
+  margin-top: 36px;
+  margin-bottom: 100px;
+}
+.login_right_content h2 {
+  font-size: 30px;
+  margin-bottom: 64px;
+font-weight: 700;
+}
+.forgot_password_container {
+  display: flex;
+  justify-content: space-between;
+}
+.remember_div {
+  display: flex;
+  gap: 8px;
+}
+.forgot_password_container a {
+  color: #56ccf2;
+}
+.center_align {
+  text-align: center;
+}
+.divider_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.divider{
+  width: 196px;
+height: 0px;
+border: 1px solid #A6A6A6;
+}
+.google_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #56CCF2;
+border-radius: 4px;
+padding-top: 16px;
+padding-bottom: 16px;
+width: 100%;
+background-color: white;
+margin-bottom: 2rem;
+}
+
+#google_login_text{
+  color: #408CC6;
+  font-weight: 700;
+  font-size: 20px;
 }
